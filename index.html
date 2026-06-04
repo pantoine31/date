@@ -467,7 +467,7 @@
   <div class="bubble-wrap">
     <div>
       <div class="name-tag">Αντώνης</div>
-      <div class="bubble him">Να σου πω κάτι ακόμα.... Σου αρέσει να βγαίνεις έξω;</div>
+      <div class="bubble him">Κάτι σε ρωτάω... Σου αρέσει να βγαίνεις έξω;</div>
     </div>
   </div>
   <div class="question-card">
@@ -560,6 +560,94 @@
   </div>
 </div>
 
+<!-- ═══════════════ SCREEN 7 — AVAILABILITY ═══════════════ -->
+<div class="screen" id="s7">
+  <div class="deco-line"><span></span>💌<span></span></div>
+  <div class="progress">
+    <div class="dot" id="d1g"></div>
+    <div class="dot" id="d2g"></div>
+    <div class="dot" id="d3g"></div>
+    <div class="dot" id="d4g"></div>
+    <div class="dot" id="d5g"></div>
+    <div class="dot" id="d6g"></div>
+    <div class="dot active" id="d7g"></div>
+  </div>
+  <div class="bubble-wrap">
+    <div>
+      <div class="name-tag">Αντώνης</div>
+      <div class="bubble him">Τέλεια επιλογή! 🙌 Τελευταία ερώτηση... Πότε είσαι διαθέσιμη;</div>
+    </div>
+  </div>
+  <div class="question-card">
+    <p class="question-text">Πότε είσαι διαθέσιμη;</p>
+    <div class="choices">
+      <button class="choice-btn" onclick="goFinalAvail('📅 Κάθε μέρα!')">
+        <span class="emoji">📅</span> Κάθε μέρα!
+      </button>
+      <button class="choice-btn" onclick="showAvailPopup()">
+        <span class="emoji">🤔</span> Θα δούμε...
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SCREEN 8 — CATCHUP ═══════════════ -->
+<div class="screen" id="s8">
+  <div class="deco-line"><span></span>💌<span></span></div>
+  <div class="progress">
+    <div class="dot" id="d1h"></div>
+    <div class="dot" id="d2h"></div>
+    <div class="dot" id="d3h"></div>
+    <div class="dot" id="d4h"></div>
+    <div class="dot" id="d5h"></div>
+    <div class="dot" id="d6h"></div>
+    <div class="dot" id="d7h"></div>
+    <div class="dot active" id="d8h"></div>
+  </div>
+  <div class="bubble-wrap">
+    <div>
+      <div class="name-tag">Αντώνης</div>
+      <div class="bubble him">Πριν κλείσουμε... να σου πω και κάτι. 😅</div>
+    </div>
+  </div>
+  <div class="question-card" style="text-align:left;">
+    <p class="question-text" style="font-size:17px; text-align:left; margin-bottom:18px;">📋 Η κατάσταση του Αντώνη τις τελευταίες 3 εβδομάδες:</p>
+
+    <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:20px;">
+      <div style="background:#FDF4F7; border-radius:12px; padding:12px 14px; border-left:3px solid #D4537E;">
+        <span style="font-size:18px;">🤕</span>
+        <span style="font-size:14px; color:#2C2C2A; line-height:1.5;"> <strong>Σπασμένο δάχτυλο.</strong> Ναι. Παρόλα αυτά συνεχίζει. Σαν ήρωας. Σαν τον Μπομπ με το δαχτυλάκι να πονάει. 🫵😭</span>
+      </div>
+      <div style="background:#FDF4F7; border-radius:12px; padding:12px 14px; border-left:3px solid #D4537E;">
+        <span style="font-size:18px;">🚗</span>
+        <span style="font-size:14px; color:#2C2C2A; line-height:1.5;"> <strong>-2 καθρέφτες στο αυτοκίνητο.</strong> Του τους έκλεψαν αλλά αυτός εκεί, βράχος. Βέβαια, το αυτοκίνητο έχει πλέον μηδενική αυτοπεποίθηση. Κι αυτός επίσης.</span>
+      </div>
+      <div style="background:#FDF4F7; border-radius:12px; padding:12px 14px; border-left:3px solid #D4537E;">
+        <span style="font-size:18px;">🪟</span>
+        <span style="font-size:14px; color:#2C2C2A; line-height:1.5;"> <strong>1 χαλασμένη σίτα στο σπίτι.</strong> Τα κουνούπια χαίρονται. Αυτός όχι. Του κόστισε 300 ευρώ μία επισκευή ρε συ... μάλωνε με τον μάστορα... ναι ήμουν μπροστά!!!! 😂</span>
+      </div>
+      <div style="background:#FAEEDA; border-radius:12px; padding:12px 14px; border-left:3px solid #EF9F27;">
+        <span style="font-size:18px;">🎪</span>
+        <span style="font-size:14px; color:#2C2C2A; line-height:1.5;"> <strong>5 μέρες × 10 ώρες σε καρέκλα</strong> στο αγαπημένο σου φεστιβάλ. Μου είπε να σου πω ότι αφορά το αγαπημένο σου φεστιβάλ, ναι αυτό με τους χορούς... Ονόματα, παρουσίες, χαμόγελα που κρύβουν πόνο. Και το έκανε σκεπτόμενος πως έτσι θα βγάλει τα έξοδα για να έρθει να σε δει μικρή μπου. 🥺</span>
+      </div>
+      <div style="background:#FDF4F7; border-radius:12px; padding:12px 14px; border-left:3px solid #D4537E;">
+        <span style="font-size:18px;">😤</span>
+        <span style="font-size:14px; color:#2C2C2A; line-height:1.5;"> <strong>Τέλος να πω</strong>, σαν βοηθός του κυρίου Αντώνη, πως τη τελευταία φορά τον παράτησες μόνο του μέσα στα νεύρα για κάτι που ξεκίνησες κι αδιαφόρησες. ΜΟΝΟΣ ΤΟΥ. Με το δαχτυλάκι να πονάει. ΣΑΝ ΤΟΝ ΜΠΟΜΠ. 😭🫵 ΕΜΕΝΑ ΔΕΝ ΜΕ ΑΚΟΥΓΕ ΚΑΝΝ, ΜΕ ΕΒΡΙΖΕ!!!</span>
+      </div>
+      <div style="background:#F0FBF4; border-radius:12px; padding:12px 14px; border-left:3px solid #4CAF82;">
+        <span style="font-size:18px;">💚</span>
+        <span style="font-size:14px; color:#2C2C2A; line-height:1.5;"> <strong>Παρόλα αυτά...</strong> ένιωθε πως έπρεπε να έρθει να σε βρει στα H&amp;M. Βλέπεις ψάχνει κάθε μέρα ΡΟΖ ΒΕΡΜΟΥΔΕΣ και ΜΑΥΡΑ ΜΠΛΟΥΖΑΚΙΑ... μπορείς να βοηθήσεις; (χοχοχοχοχο 😂) Και νιώθει ανήμπορος που δεν μπορεί να σε βοηθήσει περισσότερο. Οπότε... <em>ναι</em>, αξίζει κάθε καρέκλα. 🌹</span>
+      </div>
+      <div style="background:#EEF4FF; border-radius:12px; padding:12px 14px; border-left:3px solid #6B8FD4;">
+        <span style="font-size:18px;">🎓</span>
+        <span style="font-size:14px; color:#2C2C2A; line-height:1.5;"> Μου είπε να σου πω επίσης <strong>καλή επιτυχία με την εξέταση διπλώματος!!</strong> ΤΟΥ ΧΡΩΣΤΑΣ ΒΟΛΤΕΣ ΑΡΚΕΤΕΣ ΕΜΑΘΑ ΕΕΕΕΕ , ΤΑ ΞΕΡΩ ΟΛΑ ΕΓΩ. 😏🕵️</span>
+      </div>
+    </div>
+
+    <button class="btn-yes" style="width:100%; font-size:14px; padding:16px;" onclick="goTo('sFinal'); launchConfetti();">WTF??? ΠΛΖ ΠΡΟΧΩΡΑ ΝΑ ΤΕΛΕΙΩΣΕΙ 😭</button>
+  </div>
+</div>
+
 <!-- ═══════════════ FINAL SCREEN ═══════════════ -->
 <div class="screen" id="sFinal">
   <div class="heart-big">💖</div>
@@ -568,6 +656,7 @@
     <p style="font-size:13px; color:#888780; margin-bottom:6px; text-transform:uppercase; letter-spacing:0.07em; font-weight:700;">Η απάντησή σου</p>
     <p style="font-size:17px; color:#72243E; font-family:'Playfair Display',serif;">✅ Ναι στο ραντεβού</p>
     <p style="font-size:15px; color:#D4537E; margin-top:6px;" id="choiceDisplay"></p>
+    <p style="font-size:15px; color:#888780; margin-top:4px;" id="availDisplay"></p>
   </div>
   <img src="assets/yes.png" alt="" style="max-width:200px; width:100%; height:auto; border-radius:16px; margin:16px auto 0; display:block;">
   <p class="final-sub" style="margin-top:14px;">Δεν το πιστεύω ακόμα... Θα τα πούμε σύντομα για τις λεπτομέρειες! 🌹✨</p>
@@ -605,10 +694,17 @@
     window.scrollTo(0,0);
   }
 
+  let selectedActivity = '';
+
   function goFinal(choice) {
+    selectedActivity = choice;
     document.getElementById("choiceDisplay").textContent = choice;
-    goTo("sFinal");
-    launchConfetti();
+    goTo("s7");
+  }
+
+  function goFinalAvail(avail) {
+    document.getElementById("availDisplay").textContent = avail;
+    goTo("s8");
   }
 
   function goYes() {
@@ -620,8 +716,16 @@
     document.getElementById('noPopup').classList.add('show');
   }
 
+  function showAvailPopup() {
+    document.getElementById('availPopup').classList.add('show');
+  }
+
   function closePopup() {
     document.getElementById('noPopup').classList.remove('show');
+  }
+
+  function closeAvailPopup() {
+    document.getElementById('availPopup').classList.remove('show');
   }
 
   function launchConfetti() {
@@ -643,5 +747,17 @@
     setTimeout(() => wrap.innerHTML = '', 5000);
   }
 </script>
+
+<!-- ═══════════════ POPUP AVAILABILITY ═══════════════ -->
+<div class="popup-overlay" id="availPopup">
+  <div class="popup-box">
+    <span class="popup-emoji">🤖</span>
+    <img src="assets/no.png" alt="" style="max-width:160px; width:100%; height:auto; border-radius:12px; margin-bottom:12px; display:block; margin-left:auto; margin-right:auto;">
+    <p class="popup-title">Ααααα όχι!</p>
+    <p class="popup-text">Δεν έμαθες ακόμα ότι δεν δέχομαι αρνητικές απαντήσεις; Με προγραμμάτισε σωστά ο Αντώνης ώστε να μου λες μόνο <strong>ΝΑΙ</strong>. Προσπάθησε ξανά. 😏</p>
+    <button class="popup-ok" onclick="closeAvailPopup()">Εντάξει ρε... 😅</button>
+  </div>
+</div>
+
 </body>
 </html>

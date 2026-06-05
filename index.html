@@ -644,7 +644,71 @@
       </div>
     </div>
 
-    <button class="btn-yes" style="width:100%; font-size:14px; padding:16px;" onclick="goTo('sFinal'); launchConfetti();">WTF??? ΠΛΖ ΠΡΟΧΩΡΑ ΝΑ ΤΕΛΕΙΩΣΕΙ 😭</button>
+    <button class="btn-yes" style="width:100%; font-size:14px; padding:16px;" onclick="goTo('s9')">WTF??? ΠΛΖ ΠΡΟΧΩΡΑ ΝΑ ΤΕΛΕΙΩΣΕΙ 😭</button>
+  </div>
+</div>
+
+<!-- ═══════════════ SCREEN 9 — ΣΥΜΒΑΣΗ ═══════════════ -->
+<div class="screen" id="s9">
+  <div class="deco-line"><span></span>📜<span></span></div>
+  <div class="progress">
+    <div class="dot" id="d1i"></div>
+    <div class="dot" id="d2i"></div>
+    <div class="dot" id="d3i"></div>
+    <div class="dot" id="d4i"></div>
+    <div class="dot" id="d5i"></div>
+    <div class="dot" id="d6i"></div>
+    <div class="dot" id="d7i"></div>
+    <div class="dot" id="d8i"></div>
+    <div class="dot active" id="d9i"></div>
+  </div>
+
+  <div style="background:#FFFEF5; border:2px solid #C9B97A; border-radius:16px; padding:24px 20px; width:100%; font-family:'Playfair Display',serif; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+
+    <p style="text-align:center; font-size:11px; letter-spacing:0.15em; color:#888; text-transform:uppercase; margin-bottom:4px;">Επίσημο Έγγραφο · Αρ. Πρωτ. 001</p>
+    <h2 style="text-align:center; font-size:20px; color:#2C2C2A; margin-bottom:4px; font-style:italic;">Σύμβαση Ραντεβού</h2>
+    <p style="text-align:center; font-size:11px; color:#aaa; margin-bottom:20px;">________________________</p>
+
+    <p style="font-size:13px; color:#444; line-height:1.9; margin-bottom:16px;">
+      Στην πόλη <strong>της καρδιάς του Αντώνη</strong>, σήμερα ημέρα που εσύ η ίδια επέλεξες να ανοίξεις αυτή τη σελίδα,
+    </p>
+
+    <p style="font-size:13px; color:#444; line-height:1.9; margin-bottom:16px;">
+      <strong>Η ΠΡΩΤΗ ΣΥΜΒΑΛΛΟΜΕΝΗ</strong> (εφεξής καλουμένη <em>"η τυχερή"</em>), της οποίας το ονοματεπώνυμο αναγράφεται κατωτέρω,
+    </p>
+
+    <p style="font-size:13px; color:#444; line-height:1.9; margin-bottom:16px;">
+      <strong>ΑΠΟΔΕΧΕΤΑΙ ΑΝΕΠΙΦΥΛΑΚΤΩΣ</strong> τα εξής:
+    </p>
+
+    <div style="background:#FDF4F7; border-radius:10px; padding:14px 16px; margin-bottom:16px; border-left:3px solid #D4537E;">
+      <p style="font-size:12px; color:#444; line-height:1.9; margin:0;">
+        <strong>Άρθρο 1.</strong> Η υπογράφουσα δηλώνει ότι αποδέχεται το ραντεβού με τον κύριο Αντώνη, ελεύθερα και αβίαστα. <em>(Εντάξει, μπορεί και λίγο βιαστικά λόγω σελίδας.)</em> 😅<br><br>
+        <strong>Άρθρο 2.</strong> Η υπογράφουσα δηλώνει ότι <strong>δεν θα αργήσει</strong> — ή αν αργήσει, θα έχει πολύ καλή δικαιολογία.<br><br>
+        <strong>Άρθρο 3.</strong> Ο κύριος Αντώνης δεσμεύεται ότι θα είναι στην ώρα του, θα σε προσέξει, και θα σε γυρίσει πίσω με ασφάλεια. Αυτό το άρθρο το υπέγραψε μόνος του ήδη. 🌹<br><br>
+        <strong>Άρθρο 4.</strong> Η παρούσα σύμβαση δεν έχει ημερομηνία λήξης, αλλά η πρώτη βόλτα μετρά ως <em>"δοκιμαστική".</em> Χοχο. 😄
+      </p>
+    </div>
+
+    <p style="font-size:12px; color:#888; line-height:1.7; margin-bottom:20px; font-style:italic; text-align:center;">
+      Η παρούσα σύμβαση συντάχθηκε σε ένα αντίτυπο,<br>το οποίο κρατά ο Αντώνης στην καρδιά του.
+    </p>
+
+    <p style="font-size:13px; color:#444; margin-bottom:8px; font-weight:600;">✍️ Υπογραφή της τυχερής:</p>
+    <input
+      type="text"
+      id="signatureName"
+      placeholder="Γράψε το όνομά σου εδώ..."
+      style="width:100%; padding:12px 16px; border-radius:10px; border:1.5px solid #F4C0D1; font-family:'Playfair Display',serif; font-size:15px; font-style:italic; color:#72243E; background:#FFF8FB; margin-bottom:16px; outline:none;"
+    />
+
+    <button
+      onclick="signContract()"
+      style="width:100%; padding:16px; border-radius:14px; border:none; background:linear-gradient(135deg, #D4537E, #B03060); color:#fff; font-family:'Playfair Display',serif; font-size:17px; font-style:italic; cursor:pointer; box-shadow:0 4px 16px rgba(212,83,126,0.35);">
+      🖊️ Υπογράφω επίσημα!
+    </button>
+
+    <p id="signError" style="color:#D4537E; font-size:12px; text-align:center; margin-top:10px; display:none;">Ψσσστ... χρειάζεται το όνομά σου για να ισχύει η σύμβαση! 😄</p>
   </div>
 </div>
 
@@ -657,6 +721,7 @@
     <p style="font-size:17px; color:#72243E; font-family:'Playfair Display',serif;">✅ Ναι στο ραντεβού</p>
     <p style="font-size:15px; color:#D4537E; margin-top:6px;" id="choiceDisplay"></p>
     <p style="font-size:15px; color:#888780; margin-top:4px;" id="availDisplay"></p>
+    <p style="font-size:14px; color:#72243E; margin-top:8px; font-family:'Playfair Display',serif; font-style:italic;" id="signedName"></p>
   </div>
   <img src="assets/yes.png" alt="" style="max-width:200px; width:100%; height:auto; border-radius:16px; margin:16px auto 0; display:block;">
   <p class="final-sub" style="margin-top:14px;">Δεν το πιστεύω ακόμα... Θα τα πούμε σύντομα για τις λεπτομέρειες! 🌹✨</p>
@@ -728,6 +793,18 @@
     document.getElementById('availPopup').classList.remove('show');
   }
 
+
+  function signContract() {
+    const name = document.getElementById('signatureName').value.trim();
+    if (!name) {
+      document.getElementById('signError').style.display = 'block';
+      return;
+    }
+    document.getElementById('signError').style.display = 'none';
+    document.getElementById('signedName').textContent = name + ' 🖊️';
+    goTo('sFinal');
+    launchConfetti();
+  }
   function launchConfetti() {
     const wrap = document.getElementById('confettiWrap');
     const colors = ['#D4537E','#F4C0D1','#EF9F27','#FAC775','#B5D4F4','#9FE1CB','#FBEAF0'];
